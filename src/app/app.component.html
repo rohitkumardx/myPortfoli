@@ -1,0 +1,196 @@
+<header>
+  <div class="logo">RohitRK<span>.</span></div>
+  <nav #navMenu>
+    <ul>
+      <li><a href="#home"><span>Home</span></a></li>
+      <li><a href="#about"><span>About Me</span></a></li>
+      <li><a href="#abilities"><span>Skills</span></a></li>
+      <li><a href="#"><span>Project</span></a></li>
+      <li><a href="#experiences"><span>Experiences</span></a></li>
+      <li><a href="#contact"><span>Contact</span></a></li>
+    </ul>
+  </nav>
+  <div class="hamburger" (click)="toggleMenu()">
+    &#9776;
+  </div>
+</header>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <img src="../../assets/images/myPicture.jpg" alt="Reza Ghasemzadeh">
+    <div class="text-content">
+      <h6>Hi There, I'm</h6> <br>
+      <h1>Rohit Kumar</h1> 
+      <p class="text">I am a software developer with experience in .NET and Angular. <br> I specialize in building dynamic and responsive web applications, <br> leveraging the strengths of both frameworks to deliver high-quality <br> software solutions.</p>
+      <p class="p"> <span class="repeating-text">Full Stack Developer </span></p>
+      <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+         
+        </div>  
+    </div>
+  </div>
+</section>
+<section id="about" class="about-section">
+  <div class="container">
+      <div class="row align-items-center flex">
+          <div class="col-lg-6 my-3 my-lg-0">
+              <div class="about-text">
+                  <h2  class="custom-font">I love being a <br> developer!</h2>
+                  <p  class="custom-font">
+                    Hello, I am Rohit. I am a 25-year-old Full Stack Developer. I completed my graduation from DAV College, Sec-10, Chandigarh, and my post-graduation in MCA from Panjab University, Chandigarh. I have core knowledge of OOP concepts, C, C#, JavaScript, TypeScript, and also possess knowledge of the .NET Core framework and Angular framework. Currently, I am working with dxBrite as a Full Stack Developer.   
+                  </p>
+                  <div class="row counter flex">
+                      <div class="col-lg-5 col-6">
+                          <div class="counter-box my-3">
+                              <h5 class="count" data-to="53" data-speed="53">6</h5>
+                              <p>Completed projects</p>
+                          </div>
+                      </div>
+                      <div class="col-lg-5 col-6">
+                          <div class="counter-box my-3 mb-md-0">
+                              <h5 class="count" data-to="6" data-speed="6">6</h5>
+                              <p>Positive reviews</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6">
+              <div class="about-img">
+                  <img src="../../assets/images/AboutMe.png" title="AboutMe" alt="AboutMe">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section id="abilities" class="intro-section">
+  <div class="intro-content">
+    <div class="details-section">
+      <h2>Skills</h2>
+      <p>Here you can see my skills, one of the fascinations of the computer world is the momentary changes of technologies, but I try to update my knowledge every day and experience new technologies.</p>
+      <div class="skills-container">
+        <span class="tech-skill">.NET</span>
+        <span class="tech-skill">Angular</span>
+        <span class="tech-skill">JavaScript</span>
+        <span class="tech-skill">HTML / CSS</span>
+        <span class="tech-skill">TypeScript</span>
+        <span class="tech-skill">MySQL</span>
+        <span class="tech-skill">C#</span>
+      </div>
+    </div>
+    <div class="language-section">
+      <h2>Language skill</h2>
+      <p>One of my hobbies is studying and learning languages. I try to be able to learn and use my favorite languages.</p>
+      <div class="language-container">
+        <div class="language-item">
+          <span class="lang-percentage">90%</span>
+          <p>English</p>
+        </div>
+        <div class="language-item">
+          <span class="lang-percentage">70%</span>
+          <p>Hindi</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="experiences" class="experience-section" #experienceCards>
+  <div class="experience-header">
+    <h2>My Experiences</h2>
+    <p>One of the most beautiful parts of every person's life, the part of their work life, I am very happy to have spent this part of my life with the people I loved, and it has made my interest in my work more and more.</p>
+  </div>
+  <div class="experience-container">
+    <div class="experience-card">
+      <div class="logo">
+      <div class="experience-duration space">
+        <img src="../assets/images/companyLogo1.png" height="50px" width="50px" alt="Company Logo 1"> <span class="duration-icon" >14/Feb/2023 - 14/Aug/2023 </span> 
+      </div>
+      </div>
+      <div class="experience-details">
+        <h3>Internship - DxBrite Technology <span>(Full time)</span></h3>
+        <ul>
+          <li>Worked on developing dynamic web applications using Angular and .NET Core.</li>
+          <li>Managed and optimized databases with 100,000+ users.</li>
+          <li>Improved front-end performance using various optimization techniques.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="experience-card">
+      <div class="logo">
+        <div class="experience-duration space">
+          <img src="../assets/images/companyLogo1.png" height="50px" width="50px" alt="Company Logo 1"> <span class="duration-icon" >14/Aug/2023 - Present </span> 
+        </div>
+        </div>
+      <div class="experience-details">
+        <h3>Full Stack Developer - DxBrite Technology <span>(Full time)</span></h3>
+        <ul>
+          <li>Developed SaaS-based solutions for various clients.</li>
+          <li>Worked with a team to refactor and optimize existing projects.</li>
+          <li>Implemented responsive designs for large-scale web applications.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="hireMe">
+    <h2 class="h2">I Am Available For Remote Jobs!</h2>
+    <button class="hire-button">Hire Me Now</button>
+  </div>
+</section>
+<section class="get-in-touch" id="contact">
+  <h2 class="section-title">Get In Touch</h2>
+  <p class="section-description">Let me know if you have any criticism, suggestion, or problem. I'm waiting to hear from you!</p>
+  <div class="contact-container">
+    <!-- Left Section: Form -->
+     <div class="row">
+
+     
+    <div class="contact-form col-5 offset-2">
+      <h3>What's up?</h3>
+      <form>
+        <div class="row">
+          <div class="col-7">
+            <div class="input-group">
+              <label for="name">Name (required)</label>
+              <input type="text" id="name" placeholder="Full name" required>
+            </div>
+            <div class="input-group">
+              <label for="email">Email (required)</label>
+              <input type="email" id="email" placeholder="Email address" required>
+            </div>
+            <div class="input-group">
+              <label for="subject">Subject (required)</label>
+              <input type="text" id="subject" placeholder="Subject" required>
+            </div>
+          
+          </div>
+       <div class="col-5">
+        <div class="input-group">
+          <label for="comment">Comment (required)</label>
+          <textarea id="comment" placeholder="Type comment" required></textarea>
+        </div>
+       </div>
+        
+       
+      </div>
+        <!-- Add your CAPTCHA here -->
+        <button type="submit" class="submit-button">Contact Me</button>
+      </form>
+    </div>
+    <!-- Right Section: Contact Details -->
+    <div class="contact-details col-4">
+      <h3>What is your plan? Call me</h3>
+      <p>You can get my contact information here and if you like, you can see my profiles on social networks.</p>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> <strong class="space">Location:</strong> Sector 14 Chandigarh</li>
+        <li><i class="fas fa-envelope"></i> <strong  class="space">Email:</strong> rohitkumarmca1999&#64;gmail.com</li>
+        <li><i class="fas fa-phone"></i> <strong  class="space">Phone:</strong> 9817259252</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</section>
