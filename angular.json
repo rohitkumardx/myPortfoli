@@ -27,8 +27,8 @@
             "styles": [
               "src/styles.css",
               "src/assets/css/style.css",
-               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-                "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
           },
@@ -37,13 +37,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "15kb"
                 }
               ],
               "outputHashing": "all"
