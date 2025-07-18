@@ -1145,3 +1145,26 @@ max-width: 100%!important;
   width: 100%!important;
 }
 } 
+.download-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+ 
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* .download-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  text-decoration: none;
+} */
+.download-button:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
