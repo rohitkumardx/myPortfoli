@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
-
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -41,4 +41,28 @@ export class AppComponent implements AfterViewInit {
       observer.observe(card); // Start observing each card
     });
   }
+    // Function to send email
+
+
+isSending = false; // Add this to your component
+
+sendEmail(e: Event) {
+  e.preventDefault();
+  this.isSending = true;
+
+  emailjs.sendForm('service_002rkth', 'template_jqkd4qi', e.target as HTMLFormElement, 'Wxt5_DlKvlPvkzzA5')
+    .then((result: EmailJSResponseStatus) => {
+      console.log('SUCCESS!', result.status, result.text);
+      alert('Message sent successfully!');
+    }, (error) => {
+      console.error('FAILED...', error);
+      alert('Something went wrong. Please try again later.');
+    })
+    .finally(() => {
+      this.isSending = false;
+      (e.target as HTMLFormElement).reset();
+    });
+}
+
+
 }

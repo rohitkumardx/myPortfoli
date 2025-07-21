@@ -237,35 +237,39 @@
      
     <div class="contact-form col-5 offset-2">
       <h3>What's up?</h3>
-      <form>
-        <div class="row">
-          <div class="col-7">
-            <div class="input-group">
-              <label for="name">Name (required)</label>
-              <input type="text" id="name" placeholder="Full name" required>
-            </div>
-            <div class="input-group">
-              <label for="email">Email (required)</label>
-              <input type="email" id="email" placeholder="Email address" required>
-            </div>
-            <div class="input-group">
-              <label for="subject">Subject (required)</label>
-              <input type="text" id="subject" placeholder="Subject" required>
-            </div>
-          
-          </div>
-       <div class="col-5">
-        <div class="input-group">
-          <label for="comment">Comment (required)</label>
-          <textarea id="comment" placeholder="Type comment" required></textarea>
-        </div>
-       </div>
-        
-       
+    <form (submit)="sendEmail($event)">
+  <div class="row">
+    <div class="col-7">
+      <div class="input-group">
+        <label for="name">Name (required)</label>
+        <input type="text" name="from_name" id="name" placeholder="Full name" required>
       </div>
-        <!-- Add your CAPTCHA here -->
-        <button type="submit" class="submit-button">Contact Me</button>
-      </form>
+      <div class="input-group">
+        <label for="email">Email (required)</label>
+        <input type="email" name="from_email" id="email" placeholder="Email address" required>
+      </div>
+      <div class="input-group">
+        <label for="subject">Subject (required)</label>
+        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+      </div>
+    </div>
+    <div class="col-5">
+      <div class="input-group">
+        <label for="comment">Comment (required)</label>
+        <textarea name="message" id="comment" placeholder="Type comment" required></textarea>
+      </div>
+    </div>
+  </div>
+
+ <button type="submit" class="submit-button" [disabled]="isSending">
+  <span *ngIf="!isSending">Contact Me</span>
+  <span *ngIf="isSending">
+    <i class="spinner"></i> Sending...
+  </span>
+</button>
+
+</form>
+
     </div>
     <!-- Right Section: Contact Details -->
     <div class="contact-details col-4">
@@ -274,7 +278,7 @@
       <ul>
         <li><i class="fas fa-map-marker-alt"></i> <strong class="space">Location:</strong> Sector 14 Chandigarh</li>
         <li><i class="fas fa-envelope"></i> <strong  class="space">Email:</strong> rohitkumarmca1999&#64;gmail.com</li>
-        <li><i class="fas fa-phone"></i> <strong  class="space">Phone:</strong> 9817259252</li>
+        <li><i class="fas fa-phone"></i> <strong  class="space">Phone:</strong> 6284832059</li>
       </ul>
     </div>
   </div>
